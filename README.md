@@ -1,44 +1,14 @@
-usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]
-           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]
-           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]
-           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]
-           [--config-env=<name>=<envvar>] <command> [<args>]
+# WaterMonitorApp
 
-These are common Git commands used in various situations:
+Первая alpha версия приложения по кнтролю воды.
+Планы реализации(кроме UI):
+1. Реализовать локальную базу данных для хранения данных о выпитой воды и пользователе (Выполнено не полностью?)
+2. Реализовать на основе базы данных списки с выпитой водой по времени и статистику на неделю\месяц (не выполнено)
+3. Реализовать окно настроек(Выполнено не полностью)
+4. Реализовать корректный переход от SplashScreen к EntryScreen или MainScreen в зависимости от того первый это запуск или нет(выполнено)
+5. Добавить API по подсказкам(советы по выпитой воде) через Retrofit(не выполнено)
+6. Разобраться как грамотно применить Паттерн MVVM(Выполнено не полностью)
 
-start a working area (see also: git help tutorial)
-   clone     Clone a repository into a new directory
-   init      Create an empty Git repository or reinitialize an existing one
-
-work on the current change (see also: git help everyday)
-   add       Add file contents to the index
-   mv        Move or rename a file, a directory, or a symlink
-   restore   Restore working tree files
-   rm        Remove files from the working tree and from the index
-
-examine the history and state (see also: git help revisions)
-   bisect    Use binary search to find the commit that introduced a bug
-   diff      Show changes between commits, commit and working tree, etc
-   grep      Print lines matching a pattern
-   log       Show commit logs
-   show      Show various types of objects
-   status    Show the working tree status
-
-grow, mark and tweak your common history
-   branch    List, create, or delete branches
-   commit    Record changes to the repository
-   merge     Join two or more development histories together
-   rebase    Reapply commits on top of another base tip
-   reset     Reset current HEAD to the specified state
-   switch    Switch branches
-   tag       Create, list, delete or verify a tag object signed with GPG
-
-collaborate (see also: git help workflows)
-   fetch     Download objects and refs from another repository
-   pull      Fetch from and integrate with another repository or a local branch
-   push      Update remote refs along with associated objects
-
-'git help -a' and 'git help -g' list available subcommands and some
-concept guides. See 'git help <command>' or 'git help <concept>'
-to read about a specific subcommand or concept.
-See 'git help git' for an overview of the system.
+Что из себя представляет приложение:
+Приложение расчитывает необходимое количество выпитой воды в день по формуле, в зависимости от веса и пола пользователя.
+Все данные заносятся в базу данных, и далее редактируются самим пользователем посредствам настройки, либо взаимодействия с UI компонентами приложения
