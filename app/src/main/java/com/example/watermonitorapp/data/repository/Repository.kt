@@ -1,6 +1,5 @@
 package com.example.watermonitorapp.data.repository
 
-import android.content.SharedPreferences
 import com.example.watermonitorapp.data.db.AppDatabase
 import com.example.watermonitorapp.data.entity.UserParams
 import com.example.watermonitorapp.data.entity.WaterControl

@@ -9,5 +9,4 @@ data class UserParams(
     @PrimaryKey(autoGenerate = true) val id: Int? = null,
     val weight: Int,
     val gender: Boolean,
-//    val isMaleSelected: Boolean,
 )
